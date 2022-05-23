@@ -1,0 +1,122 @@
+.headerNavBar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  position: sticky;
+  top: 0;
+}
+
+.headerNavBar__rightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.headerNavBar__container .headerNavBar__rightSide .headerNavBar__links a- {
+  font-size: 20px;
+}
+
+.headerNavBar__container .headerNavBar__rightSide button {
+  display: none;
+}
+
+.headerNavBar__container .headerNavBar__rightSide #hidden {
+  display: flex;
+}
+
+.headerNavBar__text {
+  align-items: center;
+  padding: 10px 0px 8px 8px;
+  list-style: none;
+  height: 40px;
+  padding-right: 10px;
+}
+
+.headerNavBar__text a {
+  width: 90%;
+  height: 100%;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.headerNavBar__text a:hover {
+  background-color: aqua;
+}
+
+.headerNavBar__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* TABLET */
+@media only screen and (max-width: 768px) {
+  .headerNavBar__container .headerNavBar__rightSide .headerNavBar__links a {
+    font-size: 21px;
+  }
+}
+
+/* SMARTPHONE */
+@media only screen and (max-width: 675px) {
+  .headerNavBar__container .headerNavBar__rightSide button {
+    display: flex;
+  }
+  .headerNavBar__container .headerNavBar__rightSide .headerNavBar__links {
+    display: none;
+  }
+  .headerNavBar__container .headerNavBar__rightSide #hidden {
+    position: absolute;
+    left: 0;
+    top: 56px;
+    height: 1000%;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headerNavBar__container .headerNavBar__rightSide #hidden a {
+    margin: 8px;
+    font-size: 24px;
+  }
+  .headerNavBar__button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 8px;
+    color: black;
+  }
+
+  .headerNavBar__hamburguer-Menu {
+    width: 40px;
+    height: 40px;
+  }
+  .headerNavBar__text {
+    align-items: center;
+    padding: 10px 0px 8px 8px;
+    list-style: none;
+    height: 72px;
+    padding-right: 24px;
+  }
+  .headerNavBar__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .headerNavBar__leftSide {
+    display: none;
+  }
+
+  .headerNavBar__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
